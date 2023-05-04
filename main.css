@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Breakpoint: 576px+*/
+@media (min-width: 36em) {}
+
+/* Breakpoint: 768px+*/
+@media (min-width: 48em) {}
+
+/* Breakpoint: 992px+*/
+@media (min-width: 62em) {}
+
+/* Breakpoint: 1200px+*/
+@media (min-width: 75em) {}
+
+/* Breakpoint: 1400px+*/
+@media (min-width: 87.5em) {}
+
+html {
+    font-size: 0.7rem;
+}
+
+@media (min-width: 36em) {
+    html {
+        font-size: 1rem;
+    }
+}
+/*
+@media (max-width: 20em) {
+    html {
+        font-size: 0.8em;
+    }
+}
+*/
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body p {
+    text-align: justify;
+}
+
+.link__allgemein {
+    color: black;
+    text-decoration: underline 0.1em #FDB735;
+    box-shadow: inset 0em -.1em #FDB735;
+    transition: all 0.3s ease-out;
+}
+
+.link__allgemein:hover {
+    box-shadow: inset 0em -1em #FDB735;
+}
+
+.container {   /* Senkrechte Linie für alle Bereiche */    
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+@media (min-width: 48em) {
+    .container {
+        max-width: 60rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+@media (min-width: 62em) {
+    .container {
+        max-width: 75rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
+
+.heading {
+    min-height: 35vh;
+    background-color: #FDB735;
+    /* background-image: url("./Materialien/pexels-rostislav-uzunov-5011647_background_cube.jpg");*/
+    background-image: url("./Materialien/pexels-suzy-hazelwood-1098526_Karte_2.jpg");
+    background-repeat: no-repeat;
+    background-position: 25% 50%;
+    background-size: cover;
+    color: white;
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+
+.heading__banner {
+    position: fixed;
+    width: 100%;
+    background-color: #FDB735;
+    height: 2em;
+}
+
+.heading__banner__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.heading__banner__item {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding-top: 0.5em;
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 36em) {
+    .heading__banner__flex {
+        justify-content: right;
+    }
+    .heading__banner__item {
+        display: block;
+        color: black;
+        text-decoration: none;
+        padding: 0.5em;
+    }
+}
+
+.heading__banner__item:hover {
+    text-decoration: underline;
+}
+
+.heading__titel {
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);;
+}
+
+.heading__titel h1 {
+    margin-top: 0;
+    padding-top: 6rem;
+}
+
+.heading__titel h4::before {
+    content: "";
+    display: block; /* Standardmäßig inline-Element */
+    width: 7rem;
+    height: 0.15rem;
+    background-color: white;
+    margin-left: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.mainpart {
+    min-height: 60vh;
+    background-image: url("./Materialien/pexels-photo-1939485_background_white.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.mainpart__introduction {
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+}
+
+.mainpart__introduction__list li {
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+}
+
+.mainpart__register__formular {
+    padding: 1rem;
+    border: 5px solid #E6A630;
+    border-radius: 10px;
+    backdrop-filter: blur(0.3rem);
+}
+
+.mainpart__register__formular span {
+    font-size: 0.75em;
+}
+
+.mainpart__register__formular__eingerückt {
+    padding-left: 1.25em;
+}
+
+.mainpart__ort > a {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.mainpart__ort li {
+    line-height: 1.5em;
+}
+
+.mainpart__ort h4 {
+    margin: 0;
+    padding-left: 40px;
+}
+
+.mainpart__ort__map {
+    display: block;
+    width: 100%;
+}
+
+.mainpart__cooperation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+}
+
+.mainpart__cooperation__logo {
+    display: block;
+    height: 5rem;
+}
+
+@media (min-width: 36em) {
+    .mainpart__cooperation__logo {
+        display: block;
+        height: 6.5rem;
+    }
+}
+
+
+@media (min-width: 48em) {
+    .mainpart__cooperation__logo {
+        display: block;
+        height: 7.5rem;
+    }
+}
+
+.footer {
+    background-color: #FDB735;
+}
+
+.footer__banner {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer__banner__item {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+
+@media (min-width: 36em) {
+    .footer__banner {
+        justify-content: right;
+    }
+    .footer__banner__item {
+        display: block;
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.footer__banner__item:hover {
+    text-decoration: underline;
+}
