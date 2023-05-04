@@ -183,6 +183,10 @@ body p {
     padding-left: 1.25em;
 }
 
+.mainpart__register__formular__textarea {
+    width: 90%;
+}
+
 .mainpart__ort > a {
     display: block;
     font-size: 1.17em;
