@@ -213,7 +213,7 @@
                             <div class="mainpart__register__formular__eingerückt">
                                 <label for="4">Wenn Sie Gäste zum gemeinsamen Dinner bzw. Museum-Besuch mitbringen möchten, 
                                     geben Sie bitte die Personenzahl und ggf. andere Informationen ein:</label><br><br>
-                                <textarea cols="40" rows="10" id="4" name="info" value="<?php echo $Info ?>"><?php echo $Info ?></textarea>
+                                <textarea rows="10" id="4" name="info" value="<?php echo $Info ?>" class="mainpart__register__formular__textarea"><?php echo $Info ?></textarea>
                             </div>
                         </p>
                         <p>
